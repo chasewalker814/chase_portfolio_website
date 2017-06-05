@@ -11,4 +11,4 @@
 ##I hope you like it!
 ---
 ###Chase Walker
-###Developer
+###Web Developer
