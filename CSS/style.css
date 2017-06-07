@@ -1,21 +1,30 @@
 * {
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 	background-color: rgba(255, 255, 255);
 	font-family: 'Raleway', sans-serif;
+}
+.shadow-box {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 body {
   padding: 0;
   margin: 0;
   background-color: #eee;
   font-family: 'Raleway', sans-serif;
-
 }
-h1, h2, p, li, ul{
-	box-shadow: none;
+.title-text1 {
+  font-size: 6vw;
+}
+.title-text2 {
+  font-size: 4vw;
 }
 p {
-  font-size: 2rem;
+  font-size: 3vw;
   font-weight: 100;
+}
+.container {
+	width: 100%;
+	max-width: 1700px;
+	padding: .7%;
 }
 #header-bar {
 	display: flex;
@@ -32,7 +41,6 @@ p {
 	right: 0%;
 	width: 40%;
 	height: 100%;
-  /*border: 1px solid white;*/
   justify-content: space-between;
   align-items: center;
   padding-right: 30px;
@@ -44,7 +52,6 @@ p {
 	width: 20%;
 	position: absolute;
 	left: 0%;
-	/*border: 1px solid white;*/
 	justify-content: center;
 	align-items: center;
 	font-size: 25px;
@@ -57,6 +64,7 @@ p {
 }
 .header-links:hover {
 	color: white;
+	text-decoration: none;
 }
 .header-links:after {
 	content: "";
@@ -72,18 +80,18 @@ p {
   width: 45%;
 }
 .coke-blurb {
-	margin-left: .2%;
-	/*width: 40%;*/
-	margin-top: 2%;
+	font-size: 1.5rem;
+	padding: 15px;
+	color: #eee;
 }
 .div-title {
-	position: relative;
-	font-size: 3.4rem;
-	/*top: -25px;*/
+	font-size: 2rem;
 	color: #eee;
 	font-weight: 300;
-	/*text-shadow: 2px 2px #494949;*/
-	/*text-shadow: 0px -5px 2px rgba(150, 150, 150, 1);*/
+	padding: 15px;
+	border: 1px solid white;
+	margin: 10px;
+	border-radius: 10px;
 }
 #top-banner {
 	display: flex;
@@ -103,7 +111,6 @@ p {
 	margin-top: -5vh;
 	color: #fff;
 	font-size: 5rem;
-	box-shadow: none;
 	font-weight: 300;
 	width: 50%;
 }
@@ -125,61 +132,43 @@ p {
 	width: 100%;
 	z-index: 1;
 }
-#container1 {
+/*#container1 {
 	height: 100%;
 	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1650px;
-	padding: 1%;
+	padding: 15px;
 	z-index: 0;
 	box-shadow: none;
-}
+}*/
 #coke-container {
+  margin: 0;
+}
+#coke-box2 {
 	display: flex;
-	box-shadow: none;
-
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: #cc3341;
+	height: 350px;
+	margin: .5%;
 }
 #coke-box1 {
 	display: block;
-	float: left;
-	width: 50%;
-	background-color: #cc3341;
+	margin: .5%;
+	overflow: hidden;
+	background: url(../Images/coca-cola.png);
 	background-size: cover;
-	height: 400px;
-	min-height: 400px;
-	/*width: auto;*/
-	/*margin-top: 15px;*/
-	margin-right: 10px;
-	/*flex-direction: column;*/
-}
-#coke-box2 {
-	background: url(../Images/coca-cola.png) 30% center no-repeat;
-	background-size: cover;
-	background-origin: 20px;
-	display: block;
-	height: auto;
-	background-color: black;
-	width: 50%;
-	margin-left: 10px;
+	background-position: center;
+	height: 350px;
 }
 #div3 {
-	display: flex;
-	/*display: block;*/
-  margin-left: auto;
-  margin-right: auto;
-  height: 100vh;
-  min-height: 400px;
 	background-color: #fff;
-	margin-top: 15px;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
 }
 #teaser-div {
 	padding: 0;
 	display: flex;
-	/*display: block;*/
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -235,7 +224,6 @@ p {
 	align-items: center;
 	font-size: 3rem;
 	font-weight: 100;
-	box-shadow: none;
 	/*line-height: 60px;*/
 	margin-top: 120px;
 }
@@ -269,7 +257,8 @@ header {
 #box-container {
   position: relative;
   width: 75vw;
-  min-width: 500px;
+  max-width: 100%;
+  min-width: 460px;
   height: 700px;
   background-color: #fff;
   margin: 30px auto auto auto;
@@ -322,6 +311,43 @@ header {
   top: 50%;
   left: 66.66%;
 }
+@media only screen and (max-width: 480px) {
+  .pos1 {
+  	top: 0%;
+  	left: 0%;
+  }
+  .pos2 {
+    top: 16.66%;
+    left: 0%;
+  }
+  .pos3 {
+    top: 33.33%;
+    left: 0%;
+  }
+  .pos4 {
+    top: 50%;
+    left: 0%;
+  }
+  .pos5 {
+    top: 66.66%;
+    left: 0%;
+  }
+  .pos6 {
+    top: 83.33%;
+    left: 0%;
+  }
+  #box-container {
+  	height: 2000px;
+  	min-width: auto;
+  }
+  .space {
+  	width: 100%;
+  	height: 16.66%;
+  }
+  #div3 {
+  	height: auto;
+  }
+}
 .grow-div {
   display: flex;
   flex-direction: column;
@@ -355,13 +381,18 @@ img {
   user-select: none;
 }
 #expand-icon {
+	position: absolute;
   height: 25px;
   padding: 0;
 }
 .zoom-button {
-  overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  overflow: visible;
   position: absolute;
-  bottom: 0;
+  height: 52px;
+  bottom: 2px;
   left: 0;
   border-radius: 0;
   width: 100%;

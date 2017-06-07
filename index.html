@@ -2,11 +2,13 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-	<title>Portfolio | Chase Walker</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="CSS/reset.css">
-	<link rel="stylesheet" href="CSS/style.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,800" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <title>Portfolio | Chase Walker</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,800" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -22,74 +24,82 @@
   </header>
   <div id="top-banner">
     <div id="name-title">
-      <h1>Chase Walker</h1>
-      <h2>Web Developer</h2>
-      <p>Striving to build YOU a better user experience! Incorporating HTML5, CSS3, JavaScript, and Jquery. Putting emphasis on mobile first design and responsiveness.</p>
+      <h1 class="title-text1">Chase Walker</h1>
+      <h2 class="title-text2">Web Developer</h2>
+      <p>Building a better user experience! Incorporating HTML5, CSS3, Bootstrap, JavaScript, and Jquery. Putting emphasis on mobile first design and responsiveness.</p>
     </div>
 	  <video id= "banner-video" loop="loop" autoplay="autoplay">
       <source src="images/atlas.mp4" type="video/mp4">
     </video>
     <div class="darken"></div>
   </div>
-  <div id="container1">
-    <div id="coke-container">
-      <div id="coke-box1">
-    	  <h1 class="div-title">The Coca-Cola Company</h1>
-    	  <p class="coke-blurb">Experiences and skills gained while employed for the Coca-Cola Company are priceless.</p>
-  		  <p class="coke-blurb">Diversity in the people, systems and lives has allowed for a greater view into the consumer world that we live in.</p>
+
+  <div class="container shadow-box">
+
+    <div id="coke-container" class="row">
+      <div class="col-lg-6 col-md-12">
+        <div id="coke-box1" class="shadow-box"></div>
       </div>
-      <div id="coke-box2">
-        
-      </div>
+      <div class="col-lg-6 col-md-12">
+        <div id="coke-box2" class="shadow-box">
+    	    <h1 class="div-title">The Coca-Cola Company</h1>
+    	    <p class="coke-blurb">Experiences and skills gained while employed for the Coca-Cola Company are priceless.</p>
+  		    <p class="coke-blurb">Diversity in the people, systems and lives has allowed for a greater view into the consumer world.</p>
+          <p class="coke-blurb">Skills range from logistics and inventory software applications including SAP, BASIS, Oracle and JDEdwards to sales, customer service and management.</p>
+        </div>
+      </div>   
     </div>
     <div id="div3">
       <div id="skills-title">
       	<p class="info-title">Skills to Pay the Bills</p>
       	<p class="info-text">Producing high quality responsive websites and exceptional user experience</p>
       </div>
+      
       <div id="box-container">
-        <div id="box1" class="pos1 space">
+
+        <div id="box1" class="pos1 space col-sm-12">
           <img src="images/html5-logo.png"/>
           <p class="hiddenP">HTML5</p>
           <button class="zoom-button">
             <img id="expand-icon" src="images/expand.png"/>
           </button>
         </div>
-        <div id="box2" class="pos2 space">
+        <div id="box2" class="pos2 space col-sm-12">
           <img src="images/css3-logo.png"/>
           <p class="hiddenP">CSS3</p>
           <button class="zoom-button">
             <img id="expand-icon" src="images/expand.png"/>
           </button>
         </div>
-        <div id="box3" class="pos3 space">
+        <div id="box3" class="pos3 space col-sm-12">
           <img src="images/js-logo.png"/>
           <p class="hiddenP">JavaScript</p>
           <button class="zoom-button">
             <img id="expand-icon" src="images/expand.png"/>
           </button>
         </div>
-        <div id="box4" class="pos4 space">
+        <div id="box4" class="pos4 space col-sm-12">
           <img src="images/jquery-logo.png"/>
           <p class="hiddenP">JQuery</p>
           <button class="zoom-button">
             <img id="expand-icon" src="images/expand.png"/>
           </button>
         </div>
-        <div id="box5" class="pos5 space">
+        <div id="box5" class="pos5 space col-sm-12">
           <img src="images/python-logo.png"/>
           <p class="hiddenP">Python</p>
           <button class="zoom-button">
             <img id="expand-icon" src="images/expand.png"/>
           </button>
         </div>
-        <div id="box6" class="pos6 space">
+        <div id="box6" class="pos6 space col-sm-12">
           <img src="images/github-logo.png"/>
           <p class="hiddenP">GitHub</p>
           <button class="zoom-button">
             <img id="expand-icon" src="images/expand.png"/>
           </button>
         </div>
+
       </div>
     </div>
     <div id="div4">
@@ -99,8 +109,11 @@
     <div id="div6"></div>
     <div id="div7"></div>
     <div id="div8"></div>
+
   </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/style.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
