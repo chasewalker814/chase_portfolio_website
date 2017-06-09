@@ -15,10 +15,10 @@
     <div id="header-bar">
       <h1 id="header-name"><a href="#" class="header-links">Chase Walker</a></h1>
   	  <ul id="header-list">
-       <li><a href="#" class="header-links">About Me</a></li>
-       <li><a href="#" class="header-links">Skills</a></li>
-       <li><a href="#" class="header-links">Experience</a></li>
-       <li><a href="#" class="header-links">Education</a></li>
+       <li><a href="#" id="about-button" class="header-links">About Me</a></li>
+       <li><a href="#" id="skills-button" class="header-links">Skills</a></li>
+       <li><a href="#" id="exp-button" class="header-links">Experience</a></li>
+       <li><a href="#" id="edu-button" class="header-links">Education</a></li>
       </ul>
     </div>
   </header>
@@ -36,40 +36,24 @@
 
   <div class="container shadow-box">
 
-    <div id="coke-container" class="row">
-      <div class="col-lg-6 col-md-12 fly-box">
-        <div id="coke-box1" class="shadow-box"></div>
+    <div id="about-me-div" class="row shadow-box fly-box">
+      <div id="avatar-div" class="col-md-4 fly-box">
+        
       </div>
-      <div class="col-lg-6 col-md-12 fly-box">
-        <div id="coke-box2" class="shadow-box">
-    	    <h1 class="div-title">The Coca-Cola Company</h1>
-    	    <p class="coke-blurb">Experiences and skills gained while employed for the Coca-Cola Company are priceless.</p>
-  		    <p class="coke-blurb">Diversity in the people, systems and lives has allowed for a greater view into the consumer world.</p>
-          <p class="coke-blurb">Skills range from logistics and inventory software applications including SAP, BASIS, Oracle and JDEdwards to sales, customer service and management.</p>
-        </div>
-      </div>   
+      <div class="col-md-8">
+        <p>Hi friend! I'm Chase and I code things.</p>
+        <p>I live in Atlanta and work for Coca-Cola, ya know... the worlds most recognized brand.</p>
+        <p>I've got a passion for wanting to know how things work and then making them work for me.</p>
+        <p>Things like building an engine, or brewery, or beautifuly responsive websites, </p>
+      </div>
     </div>
 
-      <div id="ga-container" class="row">
-        <div class="col-lg-6 col-sm-12 fly-box">
-          <div id="ga-box1" class="shadow-box">
-            <h1 class="div-title">General Assembly Atlanta</h1>
-            <p></p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-12 fly-box">  
-          <div id="ga-box2" class="shadow-box"></div>
-        </div>
-      </div>
-
-    <div id="div3" class="shadow-box">
+    <div id="div3" class="shadow-box fly-box">
       <div id="skills-title">
-      	<p class="info-title">Skills to Pay the Bills</p>
-      	<p class="info-text">Producing high quality responsive websites and exceptional user experience</p>
+        <p class="info-title">Skills to Pay the Bills</p>
+        <p class="info-text">Producing high quality responsive websites and exceptional user experience</p>
       </div>
-      
-      <div id="box-container">
-
+      <div id="box-container" class="fly-box">
         <div id="box1" class="pos1 space col-sm-12">
           <img class="box-image" src="images/html5-logo.png"/>
           <p class="hiddenP">HTML5</p>
@@ -113,9 +97,37 @@
             <img id="expand-icon" src="images/expand.png"/>
           </button>
         </div>
-
       </div>
     </div>
+
+    <div id="coke-container" class="row">
+      <div class="zoom-parent col-lg-6 col-md-12 fly-box">
+        <div id="coke-box1" class="zoom-child shadow-box"></div>
+      </div>
+      <div class="col-lg-6 col-md-12 fly-box">
+        <div id="coke-box2" class="shadow-box">
+    	    <h1 class="div-title">The Coca-Cola Company</h1>
+    	    <p class="coke-blurb">Experiences and skills gained while employed for the Coca-Cola Company are priceless.</p>
+  		    <p class="coke-blurb">Diversity in the people, systems and lives has allowed for a greater view into the consumer world.</p>
+          <p class="coke-blurb">Skills range from logistics and inventory software applications including SAP, BASIS, Oracle and JDEdwards to sales, customer service and management.</p>
+        </div>
+      </div>   
+    </div>
+
+      <div id="ga-container" class="row">
+        <div class="col-lg-6 col-sm-12 fly-box">
+          <div id="ga-box1" class="shadow-box">
+            <h1 class="div-title">General Assembly Atlanta</h1>
+            <p></p>
+          </div>
+        </div>
+        <div class="zoom-parent col-lg-6 col-sm-12 fly-box">  
+          <div id="ga-box2" class="zoom-child shadow-box"></div>
+        </div>
+      </div>
+
+    
+
     <div id="div4">
     	<h1 class="div-title">General Assembly ATL</h1>
     </div>

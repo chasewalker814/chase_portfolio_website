@@ -47,41 +47,23 @@ $(window).on("scroll", function () {
   });
 });
 
-// var win = $(window);
-// var allMods = $(".module");
-// allMods.each(function(i, el) {
-//   var el = $(el);
-//   if (el.visible(true)) {
-//     el.addClass("already-visible"); 
-//   } 
-// });
-// win.scroll(function(event) {
-//   allMods.each(function(i, el) {
-//     var el = $(el);
-//     if (el.visible(true)) {
-//       el.addClass("slide-in"); 
-//     } 
-//   });
-// });
-
-// var win = $(window);
-
-// var allMods = $(".fly-box");
-
-// allMods.each(function(i, el) {
-//   var el = $(el);
-//   if (el.visible(true)) {
-//     el.addClass("already-visible"); 
-//   } 
-// });
-
-// win.scroll(function(event) {
-  
-//   allMods.each(function(i, el) {
-//     var el = $(el);
-//     if (el.visible(true)) {
-//       el.addClass("slide-in"); 
-//     } 
-//   });
-  
-// });
+$("#header-name").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#top-banner").offset().top}, 'slow');
+});
+$("#about-button").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#about-me-div").offset().top}, 'slow');
+});
+$("#skills-button").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#top-banner").offset().top}, 'slow');
+});
+$("#exp-button").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#top-banner").offset().top}, 'slow');
+});
+$("#edu-button").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#top-banner").offset().top}, 'slow');
+});
