@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,800" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
 <!-- ===================== HEADER BAR ======================== -->
@@ -25,17 +26,20 @@
   </header>
 <!-- ====================== BANNER VIDEO ==================== -->
   <div id="top-banner">
-    <div id="name-title">
+    <div class="name-title col-xs-5">
       <h1 class="title-text1">Chase Walker</h1>
       <h2 class="title-text2">Web Developer</h2>
-      <p id="intro-blurb">Building a better user experience! Incorporating HTML5, CSS3, Bootstrap, JavaScript, and Jquery. Putting emphasis on mobile first design and responsiveness.</p>
+      <!-- <p id="intro-blurb">Building a better user experience! Incorporating HTML5, CSS3, Bootstrap, JavaScript, and Jquery. Putting emphasis on mobile first design and responsiveness.</p> -->
+      <div class="">
+        <span class="typed-blurb1 title-text3"></span>
+        <span class="typed-blurb2 title-text3"></span>
+      </div>
     </div>
-	  <video id= "banner-video" loop="loop" autoplay="autoplay">
+	  <video id="banner-video" loop="loop" autoplay="autoplay">
       <source src="images/atlas.mp4" type="video/mp4">
     </video>
     <div class="darken"></div>
   </div>
-  <!-- <div id="clear-space"></div> -->
 <!-- ===================== MAIN CONTAINER ===================== -->
   <div class="container shadow-box">
 <!-- ====================== ABOUT ME ========================== -->
@@ -52,7 +56,7 @@
       </div>
     </div>
 <!-- ======================= SKILLS CONTAINER =================== -->
-    <div id="div3" class="shadow-box fly-box">
+    <div id="skills-container" class="shadow-box fly-box">
       <div id="skills-title">
         <p class="info-title">Skills to Pay the Bills</p>
         <p class="info-text">Producing high quality responsive websites and exceptional user experience</p>
@@ -122,7 +126,7 @@
         </div>
       </div>   
     </div>
-<!-- ==================== FLY BOX ==================== -->
+<!-- ==================== FLY BOX 2 ==================== -->
       <div id="ga-container" class="row">
         <div class="col-lg-6 col-sm-12 fly-box">
           <div id="ga-box1" class="shadow-box">
@@ -134,21 +138,11 @@
           <div id="ga-box2" class="zoom-child shadow-box"></div>
         </div>
       </div>
-
-    
-
-    <!-- <div id="div4">
-    	<h1 class="div-title"></h1>
-    </div>
-    <div id="div5"></div>
-    <div id="div6"></div>
-    <div id="div7"></div>
-    <div id="div8"></div> -->
-
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/style.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/typed.js"></script>
 </body>
 </html>

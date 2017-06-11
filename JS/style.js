@@ -49,7 +49,7 @@ $(window).on("scroll", function () {
 
 $("#header-name").click(function() {
   $("html, body").animate({
-    scrollTop: $("#top-banner").offset().top}, 'slow');
+    scrollTop: $("body").offset().top}, 'slow');
 });
 $("#about-button").click(function() {
   $("html, body").animate({
@@ -57,7 +57,7 @@ $("#about-button").click(function() {
 });
 $("#skills-button").click(function() {
   $("html, body").animate({
-    scrollTop: $("#top-banner").offset().top}, 'slow');
+    scrollTop: $("#skills-container").offset().top}, 'slow');
 });
 $("#exp-button").click(function() {
   $("html, body").animate({
@@ -72,3 +72,10 @@ $(window).scroll(function() {
   var scrollTop = $(this).scrollTop();
   $("#top-banner").css('top', -(scrollTop * .4) + 'px');
 });
+
+$(function(){
+    $(".typed-blurb1").typed({
+      strings: ["Building a better user experience!^2000", "Incorporating HTML5, CSS3, and JavaScript.^2000", "Putting emphasis on mobile first design and responsiveness."],
+      typeSpeed: 45
+    });
+  });
