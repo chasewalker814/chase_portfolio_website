@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 console.log("Hello from style.js");
 
 $(function() {
@@ -75,7 +77,10 @@ $(window).scroll(function() {
 
 $(function(){
     $(".typed-blurb1").typed({
-      strings: ["Building a better user experience!^2000", "Incorporating HTML5, CSS3, and JavaScript.^2000", "Putting emphasis on mobile first design and responsiveness."],
-      typeSpeed: 45
+      strings: ["Building a better user experience!^2000", "Incorporating HTML5, CSS3, and JavaScript.^2000", "Putting emphasis on mobile first design and responsiveness.^2000"],
+      typeSpeed: 45,
+      loop: true,
+      cursorChar: "|"
     });
   });
+});

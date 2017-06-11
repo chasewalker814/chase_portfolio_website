@@ -29,7 +29,6 @@
     <div class="name-title col-xs-5">
       <h1 class="title-text1">Chase Walker</h1>
       <h2 class="title-text2">Web Developer</h2>
-      <!-- <p id="intro-blurb">Building a better user experience! Incorporating HTML5, CSS3, Bootstrap, JavaScript, and Jquery. Putting emphasis on mobile first design and responsiveness.</p> -->
       <div class="">
         <span class="typed-blurb1 title-text3"></span>
         <span class="typed-blurb2 title-text3"></span>
@@ -41,24 +40,31 @@
     <div class="darken"></div>
   </div>
 <!-- ===================== MAIN CONTAINER ===================== -->
-  <div class="container shadow-box">
+  <div class="container">
+  <div class="row">
 <!-- ====================== ABOUT ME ========================== -->
-    <div id="about-me-div" class="row shadow-box fly-box">
-      <div id="avatar-div" class="col-xs-4 fly-box shadow-box">
-        
+    <div id="about-me-div" class="shadow-box">
+      <div class="about-me-collage col-xs-12 col-sm-6 col-md-6 fly-box">
+        <div id="spin-circle" class="fly-box"></div>
+        <div id="avatar" class="collage-pics fly-box"></div>
+        <div id="my-rig" class="collage-pics fly-box"></div>
+        <div id="code" class="collage-pics fly-box"></div>
+        <div></div>
       </div>
-      <div id="about-text" class="col-xs-8">
-        <p class="auto-type">Hi friend! I'm Chase and I code things.</p>
-        <p class="auto-type">I live in Atlanta and work for Coca-Cola, ya know... the worlds most recognized brand.</p>
-        <p class="auto-type">I've got a passion for wanting to know how things work and then making them work for me.</p>
-        <p class="auto-type">I'm a builder.</p>
-        <p class="auto-type">What drives me forward are things like building an engine, a computer, a brewery or most important... beautifully built responsive websites.</p>
+      <div id="about-text-div" class="col-xs-12 col-sm-6 col-md-6">
+        <h1 class="about-title">What am I all about?</h1>
+        <p class="about-text">I'm a builder.</p>
+        <p class="about-text">I live in Atlanta and work for Coca-Cola maintaing logistics and inventory systems.</p>
+        <p class="about-text">I have a passion for wanting to know how things work and then making them work for me in the most efficient ways possible.</p>
+        <p class="about-text">I am a current student at General Assembly where I have learned even more incredible skills, ones used to build this website.</p>
+        <p class="about-text">I've been building custom gaming PC's and workstations for 10+ years as a side business and hobby.</p>
+        <p class="about-text">My hardware skills with building extreme cooling and custom overclocks are just that, extreme.</p>
       </div>
     </div>
 <!-- ======================= SKILLS CONTAINER =================== -->
-    <div id="skills-container" class="shadow-box fly-box">
+    <div id="skills-container" class="shadow-box col-xs-12">
       <div id="skills-title">
-        <p class="info-title">Skills to Pay the Bills</p>
+        <h1 class="info-title">Skills to Pay the Bills</h1>
         <p class="info-text">Producing high quality responsive websites and exceptional user experience</p>
       </div>
       <div id="box-container" class="fly-box">
@@ -112,22 +118,23 @@
         </div>
       </div>
     </div>
-<!-- ==================== FLY BOX 1 ===================== -->
-    <div id="coke-container" class="row">
-      <div class="zoom-parent col-lg-6 col-md-12 fly-box">
-        <div id="coke-box1" class="zoom-child shadow-box"></div>
-      </div>
-      <div class="col-lg-6 col-md-12 fly-box">
-        <div id="coke-box2" class="shadow-box">
-    	    <h1 class="div-title">The Coca-Cola Company</h1>
-    	    <p class="coke-blurb">Experiences and skills gained while employed for the Coca-Cola Company are priceless.</p>
-  		    <p class="coke-blurb">Diversity in the people, systems and lives has allowed for a greater view into the consumer world.</p>
-          <p class="coke-blurb">Skills range from logistics and inventory software applications including SAP, BASIS, Oracle and JDEdwards to sales, customer service and management.</p>
+<!-- ==================== FLY BOXES ===================== -->
+    <div class="fly-box-container shadow-box col-xs-12">
+      <div id="coke-container" class="col-xs-12">
+        <div class="zoom-parent col-lg-6 col-md-12 fly-box">
+          <div id="coke-box1" class="zoom-child shadow-box"></div>
         </div>
-      </div>   
-    </div>
+        <div class="col-lg-6 col-md-12 fly-box">
+          <div id="coke-box2" class="shadow-box">
+    	      <h1 class="div-title">The Coca-Cola Company</h1>
+    	      <p class="coke-blurb">Experiences and skills gained while employed for the Coca-Cola Company are priceless.</p>
+  		      <p class="coke-blurb">Diversity in the people, systems and lives has allowed for a greater view into the consumer world.</p>
+            <p class="coke-blurb">Skills range from logistics and inventory software applications including SAP, BASIS, Oracle and JDEdwards to sales, customer service and management.</p>
+          </div>
+        </div>   
+      </div>
 <!-- ==================== FLY BOX 2 ==================== -->
-      <div id="ga-container" class="row">
+      <div id="ga-container" class="col-xs-12">
         <div class="col-lg-6 col-sm-12 fly-box">
           <div id="ga-box1" class="shadow-box">
             <h1 class="div-title">General Assembly Atlanta</h1>
@@ -138,8 +145,13 @@
           <div id="ga-box2" class="zoom-child shadow-box"></div>
         </div>
       </div>
+    </div>
+  </div>  
   </div>
-
+    <!-- ================== FOOTER =================== -->
+  <div class="footer">
+      
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/style.js"></script>
   <script src="js/bootstrap.min.js"></script>
