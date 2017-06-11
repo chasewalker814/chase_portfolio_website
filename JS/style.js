@@ -67,3 +67,8 @@ $("#edu-button").click(function() {
   $("html, body").animate({
     scrollTop: $("#top-banner").offset().top}, 'slow');
 });
+
+$(window).scroll(function() {
+  var scrollTop = $(this).scrollTop();
+  $("#top-banner").css('top', -(scrollTop * .4) + 'px');
+});
