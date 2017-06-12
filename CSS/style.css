@@ -70,7 +70,6 @@ h1 {
 #home-button {
 	display: flex;
 	width: 25%;
-	/*border: 1px solid black;*/
 	align-items: center;
 	justify-content: center;
 }
@@ -86,7 +85,6 @@ h1 {
   justify-content: space-around;
   align-items: center;
   font-size: 18px;
-  /*border: 1px solid black;*/
 }
 #header-name{
 	font-size: 25px;
@@ -561,8 +559,6 @@ footer {
 	background-color: #383838;
 	margin: 0;
 	padding: 0;
-	/*justify-content: center;
-	align-items: center;*/
 	color: #eee;
 }
 .footer-div {
@@ -678,7 +674,6 @@ footer {
   .pos5 {
     top: 66.66%;
     left: 0%;
-    /*padding-top: 0;*/
   }
   .pos6 {
     top: 83.33%;
@@ -735,5 +730,21 @@ footer {
   .slide-in {
     transform: none;
     animation: none;
+  }
+  .footer-img {
+	  height: 55px;
+  }
+  #gmail {
+	  height: 50px;
+  }
+  #facebook {
+	  height: 62px;
+  }
+  #twitter {
+	  height: 50px;
+  }
+  #codepen {
+	  height: 45px;
+	  margin: 0 4px;
   }
 }
