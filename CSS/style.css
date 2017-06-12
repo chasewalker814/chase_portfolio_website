@@ -12,6 +12,7 @@ body {
 p {
   font-weight: 400;
 	font-size: 25px;
+	color: #383838;
 }
 .shadow-box {
 	box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.3);
@@ -58,33 +59,36 @@ h1 {
 /*=================== HEADER BAR SECTION ================*/
 #header-bar {
 	display: flex;
+	justify-content: space-between;
 	position: fixed;
 	width: 100%;
 	min-height: 40px;
 	z-index: 10000;
 	background-color: #eee;
-	/*border-bottom: 2px solid #fff;*/
 	box-shadow: 2px 8px 34px 13px rgba(0, 0, 0, 0.1);
+}
+#home-button {
+	display: flex;
+	width: 25%;
+	/*border: 1px solid black;*/
+	align-items: center;
+	justify-content: center;
+}
+#home-icon {
+	height: 35px;
+	margin: 6px 8px 0 0;
 }
 #header-list {
 	display: flex;
-	position: absolute;
+	flex-direction: row;
 	right: 0%;
 	width: 40%;
-	height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding-right: 30px;
   font-size: 18px;
+  /*border: 1px solid black;*/
 }
 #header-name{
-	display: flex;
-	height: 100%;
-	width: 20%;
-	position: absolute;
-	left: 0%;
-	justify-content: center;
-	align-items: center;
 	font-size: 25px;
 }
 .header-links {
@@ -113,7 +117,6 @@ h1 {
 }
 header {
 	display: flex;
-	justify-content: center;
 }
 
 /*================== BANNER VIDEO SECTION ================*/
@@ -195,6 +198,7 @@ header {
 }
 .about-me-collage {
 	height: 100%;
+	margin-bottom: .8%;
 }
 #spin-circle {
 	background: url(../Images/grey-gradient-circle.png) center center no-repeat;
@@ -253,6 +257,8 @@ header {
 	height: 100%;
 	color: #383838;
 	overflow: hidden;
+	background-color: #fff;
+	margin-bottom: .8%;
 }
 @keyframes rotate {
 	0% {
@@ -282,6 +288,9 @@ header {
   margin: 30px auto auto auto;
   box-shadow: 2px 8px 34px 13px rgba(0, 0, 0, 0.1);
   margin-bottom: 5%;
+}
+.box-image {
+	max-width: 100%;
 }
 .space {
   overflow: hidden;
@@ -326,48 +335,6 @@ header {
   top: 50%;
   left: 66.66%;
 }
-@media only screen and (max-width: 480px) {
-  .pos1 {
-  	top: 0%;
-  	left: 0%;
-  }
-  .pos2 {
-    top: 16.66%;
-    left: 0%;
-  }
-  .pos3 {
-    top: 33.33%;
-    left: 0%;
-  }
-  .pos4 {
-    top: 50%;
-    left: 0%;
-  }
-  .pos5 {
-    top: 66.66%;
-    left: 0%;
-  }
-  .pos6 {
-    top: 83.33%;
-    left: 0%;
-  }
-  #box-container {
-  	height: 2000px;
-  	min-width: auto;
-  	width: 100%;
-  }
-  .space {
-  	width: 100%;
-  	height: 16.66%;
-  }
-  #div3 {
-  	height: auto;
-  }
-  .grow-div {
-  	position: absolute;
-  	height: 16.66%;
-  }
-}
 .grow-div {
   display: flex;
   flex-direction: column;
@@ -376,17 +343,19 @@ header {
   width: 100%;
   height: 100%;
   z-index: 2;
-  padding-top: 140px;
+  padding-top: 75px;
   top: 0%;
   left: 0%;
   transition: 600ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .hiddenP {
   visibility: hidden;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 0;
   color: #383838;
   text-align: center;
+  width: 60%;
+  line-height: 30px;
 }
 .showP {
   visibility: visible;
@@ -395,6 +364,7 @@ header {
 .showP-small {
 	visibility: visible;
 	margin-top: -30px;
+	overflow: hidden;
 }
 img {
   height: 140px;
@@ -427,9 +397,7 @@ img {
   width: 100%;
   transition: transform 300ms cubic-bezier(0.19, 1, 0.22, 1);
   transform: translate3d(0, 41px, 0);
-  /*background-color: #cc3341;*/
   background-color: #82B541;
-  /*border: 1px solid #cc3341;*/
   border: 1px solid #82B541;
   padding: 10px 40px;
   cursor: pointer;
@@ -464,9 +432,52 @@ img {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+#github-button {
+	display: block;
+	background-color: #82B541;
+	border-color: #82B541;
+	border: 1px solid;
+	padding: 15px 40px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0;
+	padding: 15px 40px;
+	color: #fff;
+	width: auto;
+	height: auto;
+	border-radius: 5px;
+}
+#github-a {
+	color: #82B541;
+	border-color: #82B541;
+	display: flex;
+	justify-content: center;
+}
 /*===================== COKE SECTION ===================*/
-.fly-box-container {
-	background-color: #eee;
+.exp-container {
+	background-color: #fff;
+	padding: .8% 0;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+#exp-title-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 150px;
+	margin-top: 20px;
+}
+#exp-title {
+	text-align: center;
+}
+#exp-blurb {
+	text-align: center;
+	width: 75%;
 }
 #coke-container {
   /*margin: 0.1%;*/
@@ -476,10 +487,8 @@ img {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	/*background-color: #cc3341;*/
 	background-color: #fff;
 	height: 350px;
-	color: #383838;
 }
 #coke-box1 {
 	display: block;
@@ -491,16 +500,14 @@ img {
 	transition: all .5s;
 }
 .coke-blurb {
-	font-size: 1.5rem;
-	padding: 15px;
-	color: #383838;
+  font-size: 20px;
+  margin: 1% 4% 2% 4%;
 }
 .div-title {
-	font-size: 2rem;
-	color: #383838;
+	font-size: 35px;
 	font-weight: 300;
 	padding: 15px;
-	border: 1px solid #383838;
+	border: 1px solid #82B541;
 	margin: 10px;
 	border-radius: 10px;
 }
@@ -508,9 +515,24 @@ img {
 .zoom-parent:focus .zoom-child {
 	transform: scale(1.02);
 }
+.flybox-img {
+	width: 45%;
+	height: auto;
+	max-width: 300px;
+	max-height: 150px;
+	transition: all .5s;
+}
+#coke-logo {
+	margin: 2% 0 2% 2%;
+}
+.zoom-child {
+	transition: all .5s;
+}
 /*====================== GA BOX ======================*/
 #ga-container {
-  margin: 0.1%;
+}
+#ga-logo {
+  margin: 0 0 0 2%;
 }
 #ga-box2 {
   height: 350px;
@@ -522,16 +544,148 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: flex-end;
+	align-items: flex-start;
   height: 350px;
-  /*background-color: #cc3341;*/
   background-color: #fff;
 }
 /*========================= FOOTER =====================*/
 .footer {
+	display: flex;
 	height: 260px;
 	width: 100%;
 	background-color: #383838;
 	margin: 0;
 	padding: 0;
+}
+/*====================== MEDIA QUERIES ================*/
+@media only screen and (max-width: 992px) {
+  #home-button {
+	  width: 50%;
+	  justify-content: flex-start;
+	  margin-bottom: 5px;
+  }
+  #header-list {
+  	width: 50%;
+  }
+  .hiddenP {
+  	width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #home-button {
+	  width: 30%;
+	  justify-content: flex-start;
+  }
+  #header-list {
+  	width: 70%;
+  }
+  .hiddenP {
+  	width: 85%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #header-bar {
+  	flex-direction: column;
+  }
+  #home-button {
+	  width: 100%;
+  }
+  #header-list {
+  	width: 100%;
+  	justify-content: space-around;
+  	margin-bottom: 5px;
+  }
+  .hr-hide {
+  	visibility: hidden;
+  }
+  .hiddenP {
+  	position: absolute;
+  	width: 80%;
+  	padding-top: 0;
+  	font-size: 15px;
+  	margin: 0 auto;
+  }
+  .showP-small {
+  	margin-top: -50px;
+  }
+  #github-button {
+  	margin-top: 100px;
+  }
+  .pos1 {
+  	top: 0%;
+  	left: 0%;
+  }
+  .pos2 {
+    top: 16.66%;
+    left: 0%;
+  }
+  .pos3 {
+    top: 33.33%;
+    left: 0%;
+  }
+  .pos4 {
+    top: 50%;
+    left: 0%;
+  }
+  .pos5 {
+    top: 66.66%;
+    left: 0%;
+    /*padding-top: 0;*/
+  }
+  .pos6 {
+    top: 83.33%;
+    left: 0%;
+  }
+  #box-container {
+  	height: 2000px;
+  	min-width: auto;
+  	width: 100%;
+  }
+  .space {
+  	width: 100%;
+  	height: 16.66%;
+  	display: flex;
+  	justify-content: flex-start;
+  	align-items: center;
+  }
+  #skills-container {
+  	height: auto;
+  }
+  p {
+  	font-size: 20px;
+  }
+  .coke-blurb {
+  	font-size: 18px;
+  }
+  .grow-div {
+  	position: absolute;
+  	height: 16.66%;
+  }
+  .title-text1 {
+    font-size: 40px;
+  }
+  .title-text2 {
+    font-size: 20px;
+  }
+  .title-text3 {
+	  font-size: 15px;
+  }
+  .typed-cursor {
+	  font-size: 15px;
+  }
+  #about-text-div {
+  	height: auto;
+  }
+  .about-text {
+    margin: 4% 0;
+  }
+  .info-text, .info-title {
+  	width: 100%;
+  	margin: 4% 0;
+  	padding: 0;
+  }
+  .slide-in {
+    transform: none;
+    animation: none;
+  }
 }

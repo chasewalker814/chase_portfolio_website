@@ -63,11 +63,11 @@ $("#skills-button").click(function() {
 });
 $("#exp-button").click(function() {
   $("html, body").animate({
-    scrollTop: $("#top-banner").offset().top}, 'slow');
+    scrollTop: $(".exp-container").offset().top}, 'slow');
 });
-$("#edu-button").click(function() {
+$("#contact-button").click(function() {
   $("html, body").animate({
-    scrollTop: $("#top-banner").offset().top}, 'slow');
+    scrollTop: $(".footer").offset().top}, 'slow');
 });
 
 $(window).scroll(function() {
@@ -77,7 +77,7 @@ $(window).scroll(function() {
 
 $(function(){
     $(".typed-blurb1").typed({
-      strings: ["Building a better user experience!^2000", "Incorporating HTML5, CSS3, and JavaScript.^2000", "Putting emphasis on mobile first design and responsiveness.^2000"],
+      strings: ["Building a better user experience!^2000", "Incorporating HTML5, CSS3, and JavaScript.^2000", "Putting emphasis on mobile first design <br>and responsiveness.^2000"],
       typeSpeed: 45,
       loop: true,
       cursorChar: "|"
