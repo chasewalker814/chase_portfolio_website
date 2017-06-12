@@ -67,7 +67,7 @@ $("#exp-button").click(function() {
 });
 $("#contact-button").click(function() {
   $("html, body").animate({
-    scrollTop: $(".footer").offset().top}, 'slow');
+    scrollTop: $(".footer-div").offset().top}, 'slow');
 });
 
 $(window).scroll(function() {

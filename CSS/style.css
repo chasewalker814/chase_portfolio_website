@@ -447,12 +447,19 @@ img {
 	width: auto;
 	height: auto;
 	border-radius: 5px;
+	overflow: hidden;
 }
 #github-a {
 	color: #82B541;
 	border-color: #82B541;
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
+	width: 180px;
+}
+#github-button:hover {
+	color: green;
+	border-color: green;
 }
 /*===================== COKE SECTION ===================*/
 .exp-container {
@@ -549,13 +556,54 @@ img {
   background-color: #fff;
 }
 /*========================= FOOTER =====================*/
-.footer {
-	display: flex;
+footer {
 	height: 260px;
-	width: 100%;
 	background-color: #383838;
 	margin: 0;
 	padding: 0;
+	/*justify-content: center;
+	align-items: center;*/
+	color: #eee;
+}
+.footer-div {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.footer-img {
+	height: 70px;
+}
+#gmail {
+	height: 60px;
+}
+#facebook {
+	height: 73px;
+}
+#twitter {
+	height: 68px;
+}
+#codepen {
+	height: 58px;
+	margin: 0 4px;
+}
+#copyright {
+	width: 100%;
+	text-align: center;
+	color: #eee;
+	font-size: 18px;
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 5px;
+}
+.footer-links {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /*====================== MEDIA QUERIES ================*/
 @media only screen and (max-width: 992px) {
