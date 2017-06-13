@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   console.log("Hello from style.js");
-// ================== ZOOM BOXES ================
+// ==================== ZOOM BOXES ===================
   $(function() {
     var boxes = $(".space");
     boxes.click(function() {
@@ -24,7 +24,7 @@ $(document).ready(function(){
       console.log(parseInt($(this).css("z-index")));
     });
   });
-// ==================== FLY BOXES ===================
+// ====================== FLY BOXES =====================
   (function($) {
     $.fn.visible = function(partial) {
       var $t = $(this),
@@ -46,7 +46,7 @@ $(document).ready(function(){
       $(this).toggleClass("slide-in", $(this).visible(true));
     });
   });
-// =============== HEADER LINK AUTO SCROLL ===========
+// ================== HEADER LINK AUTO SCROLL ==============
   $("#header-name").click(function() {
     $("html, body").animate({
       scrollTop: $("body").offset().top}, 'slow');
@@ -67,14 +67,15 @@ $(document).ready(function(){
     $("html, body").animate({
       scrollTop: $(".footer-div").offset().top}, 'slow');
   });
+  // =================== PARALLAX BANNER ==============
   $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
     $("#top-banner").css('top', -(scrollTop * .4) + 'px');
   });
-// ==================== AUTO TYPING ===============
+// ======================= AUTO TYPING ================
   $(function(){
     $(".typed-blurb1").typed({
-      strings: ["Building a better user experience!^2000", "Incorporating HTML5, CSS3, and JavaScript.^2000", "Putting emphasis on mobile first design <br>and responsiveness.^2000"],
+      strings: ["Building a better user experience!^2000", "Incorporating HTML5, CSS3, and <br>JavaScript.^2000", "Putting emphasis on mobile first design <br>and responsiveness.^2000"],
       typeSpeed: 45,
       loop: true,
       cursorChar: "|"
