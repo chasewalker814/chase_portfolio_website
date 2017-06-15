@@ -80,8 +80,9 @@ h1 {
 	position: relative;
 	top: -12px;
 }
-
-
+.brand:hover {
+	text-decoration: none;
+}
 #header-bar {
 	display: flex;
 	justify-content: space-between;
@@ -237,15 +238,16 @@ header {
 }
 /*================== ABOUT ME SECTION ================*/
 #about-me-div {
-	height: 100vh;
+	min-height: 100vh;
 	width: auto;
 	background-color: #fff;
 	background-size: cover;
 	margin-bottom: .8%;
 	overflow: hidden;
+	position: relative;
 }
 .about-me-collage {
-	height: 100%;
+	height: 100vh;
 	margin-bottom: .8%;
 }
 #spin-circle {
@@ -274,7 +276,6 @@ header {
 	z-index: 3;
 	top: 8%;
 	left: 10%;
-
 }
 #my-rig {
 	background: url(../Images/my-rig.jpg) center center no-repeat;
@@ -293,12 +294,6 @@ header {
 	z-index: 1;
 	top: 63%;
 	left: 8%;
-}
-.about-text {
-	
-}
-.about-title {
-	
 }
 #about-text-div {
 	padding: 8% 4%;
@@ -326,10 +321,10 @@ header {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-bottom: .8%;
   overflow: hidden;
+  position: relative;
 }
 #box-container {
   position: relative;
@@ -709,6 +704,11 @@ footer {
 	align-items: center;
 }
 /*====================== MEDIA QUERIES ================*/
+@media only screen and (max-width: 1024px) {
+	#banner-video {
+  	left: -370px;
+  }
+}
 @media only screen and (max-width: 992px) {
   #home-button {
 	  width: 50%;
@@ -721,8 +721,14 @@ footer {
   .hiddenP {
   	width: 70%;
   }
+  h1 {
+  	font-size: 40px;
+  }
 }
 @media only screen and (max-width: 768px) {
+  #banner-video {
+  	left: -310px;
+  }
   #home-button {
 	  width: 30%;
 	  justify-content: flex-start;
@@ -743,9 +749,15 @@ footer {
   }
   .header-links:after {
   	bottom: 8px;
-  }	
+  }
+  .about-title {
+  	text-align: center;
+  }
 }
 @media only screen and (max-width: 480px) {
+  #banner-video {
+  	left: -300px;
+  }
   #exp-title-box {
   	margin: 10px 8px 10px 4px;
   }
@@ -842,10 +854,7 @@ footer {
   .title-text2 {
     font-size: 20px;
   }
-  .title-text3 {
-	  font-size: 15px;
-  }
-  .typed-cursor {
+  .title-text3, .typed-cursor {
 	  font-size: 15px;
   }
   #about-text-div {
@@ -862,14 +871,11 @@ footer {
   .footer-img {
 	  height: 55px;
   }
-  #gmail {
+  #gmail, #twitter {
 	  height: 50px;
   }
   #facebook {
 	  height: 62px;
-  }
-  #twitter {
-	  height: 50px;
   }
   #codepen {
 	  height: 45px;
