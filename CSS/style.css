@@ -239,12 +239,12 @@ header {
 /*================== ABOUT ME SECTION ================*/
 #about-me-div {
 	min-height: 100vh;
-	width: auto;
+	/*width: auto;*/
 	background-color: #fff;
 	background-size: cover;
 	margin-bottom: .8%;
 	overflow: hidden;
-	position: relative;
+	/*position: relative;*/
 }
 .about-me-collage {
 	height: 100vh;
@@ -306,6 +306,9 @@ header {
 	overflow: hidden;
 	background-color: #fff;
 	margin-bottom: .8%;
+}
+.about-text, .about-title {
+	margin: 20px 5px;
 }
 @keyframes rotate {
 	0% {
