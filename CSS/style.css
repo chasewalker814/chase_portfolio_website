@@ -5,6 +5,7 @@
 }
 body {
   padding: 0;
+  padding-top: .1px;
   margin: 0;
   background-color: #383838;
   font-family: 'Raleway', sans-serif;
@@ -69,6 +70,18 @@ h1 {
 	color: #82B541;
 }
 /*=================== HEADER BAR SECTION ================*/
+#bs-example-navbar-collapse-1 {
+	padding-right: 50px;
+}
+.navbar-text {
+	padding-left: 0;
+}
+.navbar-link {
+	position: relative;
+	top: -12px;
+}
+
+
 #header-bar {
 	display: flex;
 	justify-content: space-between;
@@ -87,7 +100,7 @@ h1 {
 }
 #home-icon {
 	height: 35px;
-	margin: 6px 8px 0 0;
+	margin: 10px 8px 0 0;
 }
 #header-list {
 	display: flex;
@@ -100,6 +113,11 @@ h1 {
 }
 #header-name{
 	font-size: 22px;
+	-webkit-text-decoration: none;
+	-moz-text-decoration: none;
+	-ms-text-decoration: none;
+	-o-text-decoration: none;
+	text-decoration: none;
 }
 .header-links {
 	position: relative;
@@ -109,14 +127,6 @@ h1 {
 	-o-text-decoration: none;
 	text-decoration: none;
 	box-shadow: none;
-}
-.header-links:hover, .header-links:visited, .header-links:focus {
-	color: #383838;
-	-webkit-text-decoration: none;
-	-moz-text-decoration: none;
-	-ms-text-decoration: none;
-	-o-text-decoration: none;
-	text-decoration: none;
 }
 .header-links:after {
 	content: "";
@@ -128,8 +138,8 @@ h1 {
 	text-decoration: none;
 	width: 0;
 	height: 3px;
-	bottom: -3px;
-	left: 0;
+	bottom: 12px;
+	left: 14px;
 	background-color: #82B541;
 	-webkit-transition: width .3s ease, background-color .3s ease;
 	-moz-transition: width .3s ease, background-color .3s ease;
@@ -137,13 +147,20 @@ h1 {
 	-o-transition: width .3s ease, background-color .3s ease;
 	transition: width .3s ease, background-color .3s ease;
 }
+#header-name:after {
+	bottom: -2px;
+	left: 0;
+}
 .header-links:hover:after {
-  width: 45%;
+  width: 35%;
   -webkit-text-decoration: none;
 	-moz-text-decoration: none;
 	-ms-text-decoration: none;
 	-o-text-decoration: none;
 	text-decoration: none;
+}
+#header-name:hover:after {
+	width: 46%;
 }
 header {
 	display: flex;
@@ -716,6 +733,17 @@ footer {
   .hiddenP {
   	width: 85%;
   }
+  .header-links:hover:after {
+  width: 30px;
+  -webkit-text-decoration: none;
+	-moz-text-decoration: none;
+	-ms-text-decoration: none;
+	-o-text-decoration: none;
+	text-decoration: none;
+  }
+  .header-links:after {
+  	bottom: 8px;
+  }	
 }
 @media only screen and (max-width: 480px) {
   #exp-title-box {
