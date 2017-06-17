@@ -24,6 +24,21 @@ $(document).ready(function(){
       console.log(parseInt($(this).css("z-index")));
     });
   });
+  // ===================== ABOUT PICS ===================
+  $(function() {
+    var boxes = $(".collage-pics");
+    boxes.click(function() {
+      var clickedBox = $(this),
+          max = 0;
+      boxes.each(function() {
+        var z = parseInt($(this).css("z-index"), 10);
+        max = Math.max(max, z);
+      });
+      $(this).toggleClass("grow-collage");
+      clickedBox.css("z-index", max + 1);
+      console.log(parseInt($(this).css("z-index")));
+    });
+  });
 // ====================== FLY BOXES =====================
   (function($) {
     $.fn.visible = function(partial) {
