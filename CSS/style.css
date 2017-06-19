@@ -166,6 +166,35 @@ h1 {
 header {
 	display: flex;
 }
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border: none;
+}
+.navbar-toggle span.icon-bar {
+  transition: all 0.5s;
+}
+.navbar-toggle span:nth-child(2) {
+  transform: rotate(405deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle span:nth-child(3) {
+  opacity: 0;
+}
+.navbar-toggle span:nth-child(4) {
+  transform: rotate(-405deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4) {
+  transform: translateX(15px) rotate(180deg);
+}
+.navbar-toggle.collapsed span:nth-child(3) {
+	transform: translateX(-2.7px) rotate(180deg);
+  opacity: 1;
+}
 /*================== BANNER VIDEO SECTION ================*/
 .title-text1 {
   font-size: 60px;
