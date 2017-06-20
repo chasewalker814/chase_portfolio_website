@@ -8,15 +8,14 @@ $(document).ready(function(){
       var clickedBox = $(this),
           max = 0;
       boxes.each(function() {
-        var z = parseInt($(this).css("z-index"), 10);
+        var z = parseInt($(this).css("z-index"));
         max = Math.max(max, z);
       });
       var width = $(window).width();
       if (width <= 480) {
         $(this).children(".box-image").toggleClass("image-hide");
         $(this).children().toggleClass("showP-small");
-      }
-      else {
+      } else {
         $(this).toggleClass("grow-div");
         $(this).children().toggleClass("showP");
       }
@@ -31,10 +30,13 @@ $(document).ready(function(){
       var clickedBox = $(this),
           max = 0;
       boxes.each(function() {
-        var z = parseInt($(this).css("z-index"), 10);
+        var z = parseInt($(this).css("z-index"));
         max = Math.max(max, z);
       });
-      $(this).toggleClass("grow-collage");
+      var width = $(window).width();
+      if (width >= 992) {
+        $(this).toggleClass("grow-collage");
+      } 
       clickedBox.css("z-index", max + 1);
       console.log(parseInt($(this).css("z-index")));
     });
@@ -63,6 +65,10 @@ $(document).ready(function(){
   });
 // ================== HEADER LINK AUTO SCROLL ==============
   $("#header-name").click(function() {
+    $("html, body").animate({
+      scrollTop: $("body").offset().top}, 'slow');
+  });
+  $(".brand").click(function() {
     $("html, body").animate({
       scrollTop: $("body").offset().top}, 'slow');
   });

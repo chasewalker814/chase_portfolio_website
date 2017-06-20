@@ -224,6 +224,7 @@ header {
 	position: relative;
 	z-index: -1000;
 	overflow: hidden;
+	right: 5%;
 }
 .darken {
 	position: absolute;
@@ -543,6 +544,7 @@ img {
 	align-items: center;
 	font-size: 3rem;
 	font-weight: 100;
+	margin-top: 20px;
 }
 .info-title {
 	text-align: center;
@@ -550,7 +552,7 @@ img {
 .info-text {
 	font-size: 30px;
 	font-weight: 300;
-	width: 60%;
+	width: 40%;
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -750,6 +752,11 @@ footer {
 	align-items: center;
 }
 /*====================== MEDIA QUERIES ================*/
+@media only screen and (min-width: 2440px) {
+	#banner-video {
+		right: 0;
+	}
+}
 @media only screen and (max-width: 1024px) {
 	#banner-video {
   	left: -370px;
@@ -772,6 +779,9 @@ footer {
   }
 }
 @media only screen and (max-width: 768px) {
+  .info-text {
+    width: 100%;
+  }	
   #banner-video {
   	left: -310px;
   }
