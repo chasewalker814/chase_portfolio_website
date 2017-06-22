@@ -484,9 +484,6 @@ img {
   -webkit-user-select: none;
   user-select: none;
 }
-.image-hide{
-  visibility: hidden;
-}
 #expand-icon {
 	position: absolute;
   height: 19px;
@@ -858,7 +855,13 @@ footer {
   }
   .showP-small {
   	display: flex;
+  	align-items: center;
+  	justify-content: center;
   }
+  .image-hide{
+  /*visibility: hidden;*/
+  display: none;
+}
   #github-button {
 
   }
@@ -973,7 +976,7 @@ footer {
     -o-transform: none;
     transform: none;
   }
-  #box1 .showP-small {
+/*  #box1 .showP-small {
   	margin-top: 20px;
   }
   #box2 .showP-small {
@@ -987,11 +990,12 @@ footer {
   }
   #box5 .showP-small {
   	margin-top: -30px;
-  }
+  }*/
   #box6 .showP-small {
   	margin-top: -60px;
   }
   #github-a {
   	position: relative;
+  	top: 40px;
   }
 }

@@ -5,7 +5,7 @@ $(document).ready(function(){
   // $(function() {
   //   var width = $(window).width();
   //   if width <= 480 {
-  //     $("#atlas-vid").remove();
+  //     $("#atlas-vid")...();
   //   }
   // });
   // ==================== ZOOM BOXES ===================
@@ -20,8 +20,8 @@ $(document).ready(function(){
       });
       var width = $(window).width();
       if (width <= 480) {
-        $(this).children(".box-image").toggleClass("image-hide");
         $(this).children().toggleClass("showP-small");
+        $(this).children(".box-image").toggleClass("image-hide");
         // $("#github-a").toggleClass("showP-small");
       } else {
         $(this).toggleClass("grow-div");
