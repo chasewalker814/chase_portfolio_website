@@ -214,17 +214,14 @@ header {
   color: white;
   z-index: 3;
 }
-#banner-video {
+.banner-video {
 	display: block;
-	width: auto;
-	height: auto;
 	min-height: 100vh;
 	min-width: 100vw;
-	object-fit: cover;
+	object-fit: contain;
 	position: relative;
 	z-index: -1000;
 	overflow: hidden;
-	right: 5%;
 }
 .darken {
 	position: absolute;
@@ -268,7 +265,8 @@ header {
 }
 /*================== ABOUT ME SECTION ================*/
 #about-me-div {
-	min-height: 100vh;
+	height: 100%;
+	min-height: 850px;
 	/*width: auto;*/
 	background-color: #fff;
 	background-size: cover;
@@ -278,6 +276,7 @@ header {
 }
 .about-me-collage {
 	height: 100vh;
+	min-height: 750px;
 	margin-bottom: .8%;
 }
 #spin-circle {
@@ -342,14 +341,14 @@ header {
 #about-text-div {
 	padding: 8% 4%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
-	height: 100%;
+	height: 100vh;
+	min-height: 750px;
 	color: #383838;
 	overflow: hidden;
 	background-color: #fff;
-	margin-bottom: .8%;
 }
 .about-text, .about-title {
 	margin: 20px 5px;
@@ -366,6 +365,7 @@ header {
 #skills-container {
   background-color: #fff;
   height: 100vh;
+  min-height: 850px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -378,7 +378,8 @@ header {
   width: 75vw;
   max-width: 100%;
   min-width: 460px;
-  height: 550px;
+  height: 50%;
+  min-height: 550px;
   background-color: #fff;
   margin: 30px auto auto auto;
   box-shadow: 2px 8px 34px 13px rgba(0, 0, 0, 0.1);
@@ -406,10 +407,10 @@ header {
   transition: 600ms cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 1;
   font-size: 250px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
-  padding-top: 70px;
+  /*padding-top: 70px;*/
 }
 .pos1 {
   top: 0%;
@@ -443,9 +444,10 @@ header {
   width: 100%;
   height: 100%;
   z-index: 2;
-  padding-top: 75px;
-  top: 0%;
-  left: 0%;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
   -webkit-transition: 600ms cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: 600ms cubic-bezier(0.19, 1, 0.22, 1);
   -ms-transition: 600ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -453,7 +455,8 @@ header {
   transition: 600ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .hiddenP {
-  visibility: hidden;
+	display: none;
+  /*visibility: hidden;*/
   font-size: 20px;
   margin-top: 0;
   color: #383838;
@@ -462,8 +465,10 @@ header {
   line-height: 30px;
 }
 .showP {
-  visibility: visible;
+	display: block;
+  /*visibility: visible;*/
   margin-top: 20px;
+  transform: translateY(-20px);
 }
 .showP-small {
 	visibility: visible;
@@ -577,7 +582,7 @@ img {
 #github-a {
 	color: #82B541;
 	border-color: #82B541;
-	display: flex;
+	/*display: flex;*/
 	justify-content: center;
 	overflow: hidden;
 	width: 180px;
@@ -641,6 +646,7 @@ img {
 .coke-blurb {
   font-size: 20px;
   margin: 1% 4% 2% 4%;
+  width: 92%;
 }
 .div-title {
 	font-size: 35px;
@@ -753,12 +759,12 @@ footer {
 }
 /*====================== MEDIA QUERIES ================*/
 @media only screen and (min-width: 2440px) {
-	#banner-video {
+	.banner-video {
 		right: 0;
 	}
 }
 @media only screen and (max-width: 1024px) {
-	#banner-video {
+	.banner-video {
   	left: -370px;
   }
 }
@@ -782,7 +788,7 @@ footer {
   .info-text {
     width: 100%;
   }	
-  #banner-video {
+  .banner-video {
   	left: -310px;
   }
   #home-button {
@@ -811,8 +817,9 @@ footer {
   }
 }
 @media only screen and (max-width: 480px) {
-  #banner-video {
-  	left: -300px;
+  .banner-video {
+  	left: -320px;
+  	top: 20px;
   }
   #exp-title-box {
   	margin: 10px 8px 10px 4px;
@@ -850,10 +857,10 @@ footer {
   	margin: 0 auto;
   }
   .showP-small {
-  	margin-top: -50px;
+  	display: flex;
   }
   #github-button {
-  	margin-top: 100px;
+
   }
   .pos1 {
   	top: 0%;
@@ -882,13 +889,13 @@ footer {
   #box-container {
   	height: 2000px;
   	min-width: auto;
-  	width: 100%;
+  	width: 98%;
   }
   .space {
   	width: 100%;
   	height: 16.66%;
   	display: flex;
-  	justify-content: flex-start;
+  	justify-content: center;
   	align-items: center;
   }
   #skills-container {
@@ -982,6 +989,9 @@ footer {
   	margin-top: -30px;
   }
   #box6 .showP-small {
-  	margin-top: 0;
+  	margin-top: -60px;
+  }
+  #github-a {
+  	position: relative;
   }
 }
