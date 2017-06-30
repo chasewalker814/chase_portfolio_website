@@ -266,7 +266,7 @@ header {
 /*================== ABOUT ME SECTION ================*/
 #about-me-div {
 	height: 100%;
-	min-height: 850px;
+	min-height: 750px;
 	/*width: auto;*/
 	background-color: #fff;
 	background-size: cover;
@@ -339,7 +339,7 @@ header {
 	background-position: 10% 25%;
 }
 #about-text-div {
-	padding: 8% 4%;
+	/*padding: 8% 4%;*/
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -758,6 +758,11 @@ footer {
 @media only screen and (min-width: 2440px) {
 	.banner-video {
 		right: 0;
+	}
+}
+@media only screen and (max-width: 1224px) {
+	.about-text {
+		font-size: 20px;
 	}
 }
 @media only screen and (max-width: 1024px) {
