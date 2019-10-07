@@ -196,6 +196,9 @@ header {
   opacity: 1;
 }
 /*================== BANNER VIDEO SECTION ================*/
+video {
+	filter: brightness(50%);
+}
 .title-text1 {
   font-size: 60px;
   background-color: transparent;
@@ -203,11 +206,11 @@ header {
 .title-text2 {
   font-size: 40px;
   background-color: transparent;
-  color: #383838;
+  color: white;
 }
 .title-text3 {
 	font-size: 30px;
-	color: #383838;
+	color: white;
 }
 #intro-blurb {
 	width: 50%;
