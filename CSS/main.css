@@ -512,9 +512,9 @@ img {
   transition: transform 1s ease-in-out;
 }
 .zoom-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: visible;
   position: absolute;
   height: 52px;
