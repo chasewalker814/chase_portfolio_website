@@ -104,7 +104,7 @@ $(document).ready(function(){
   // ======================= AUTO TYPING ================
   $(function(){
     $(".typed-blurb1").typed({
-      strings: ["Hey check out this thing typing on its own!^2000", "Hopefully you're an employer and I've <br>got your attention!^2000", "Building a better user experience <br>is what I do!^2000", "Incorporating HTML5, CSS3, and <br>JavaScript.^2000", "Putting emphasis on mobile first design <br>and responsiveness.^2000"],
+      strings: ["Hey check out this thing typing on its own!^2000", "Hopefully I've got your attention!^2000", "Building a better user experience <br>is what I do!^2000", "Incorporating HTML5, CSS3, and <br>JavaScript.^2000", "Putting emphasis on mobile first design <br>and responsiveness.^2000"],
       typeSpeed: 20,
       loop: true,
       cursorChar: "|"
