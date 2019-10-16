@@ -723,6 +723,10 @@ img {
   width: 100%;
   overflow: hidden;
 }
+/*========================= PROJECTS ====================*/
+#projects-container {
+	height: 100vh;
+}
 /*========================= FOOTER =====================*/
 footer {
 	height: 260px;
