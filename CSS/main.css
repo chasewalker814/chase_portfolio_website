@@ -847,9 +847,8 @@ footer {
   }
 }
 @media only screen and (max-width: 480px) {
-  .banner-video {
-  	left: -320px;
-  	top: 20px;
+  video {
+  	height: 100vh;
   }
   #exp-title-box {
   	margin: 10px 8px 10px 4px;
@@ -857,12 +856,6 @@ footer {
   #exp-title {
   	margin-bottom: 10px;
   }
-  /*#ga-container, #coke-container, .col-xs-12 {
-  	width: 100%;
-  	margin: 0;
-  	padding: 0;
-  	background-color: #adadad;
-  }*/
   #header-bar {
   	flex-direction: column;
   }
