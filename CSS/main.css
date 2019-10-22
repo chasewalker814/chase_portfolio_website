@@ -84,7 +84,7 @@ h1 {
 .brand:hover {
 	text-decoration: none;
 }
-#header-bar {
+/*#header-bar {
 	display: flex;
 	justify-content: space-between;
 	position: fixed;
@@ -93,7 +93,7 @@ h1 {
 	z-index: 10000;
 	background-color: #eee;
 	box-shadow: 2px 8px 34px 13px rgba(0, 0, 0, 0.1);
-}
+}*/
 #home-button {
   display: flex;
   width: 25%;
