@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	pointer-events: auto;
+	margin: 0;
+	font-family: proxima-nova;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: .05em;
+	line-height: 2em;
+	text-transform: none;
+	color: rgba(0,0,0,.8);
+	background-color: #fff !important;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+.Loader {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 5px;
+	z-index: 9999;
+	background-color: transparent;
+	transition: background-color .3s ease-out,transform 0s .3s linear;
+	display: none;
+}
+.Site-loaded {
+
+}
+p {
+	white-space: normal;
+	text-align: center;
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	color: #f2f6f7;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+a {
+	white-space: normal;
+	text-align: center;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	letter-spacing: .15em;
+	line-height: 2em;
+	text-transform: uppercase;
+	background-color: transparent;
+	text-decoration: none;
+	position: relative;
+	z-index: 2;
+	color: #f2f6f7;
+	transition: color .15s ease-out;
+}
+/*====================== HEADER ===================*/
+
+/*=================== INTRO ==================*/
+.home-div {
+	background: url('../Images/image2.jpeg') no-repeat fixed center;
+	background-size: 100vh;
+	width: 100%;
+	height: 100vh;
+	background-color: #E89888;
+}
+.Main-contatiner {
+	position: relative;
+}
+.Header2 {
+	color: rgba(0,0,0,.8);
+	background-color: #fff;
+	display: block;
+}
+.Header-inner-1 {
+	color: rgba(0,0,0,.8);
+	-webkit-box-align: center;
+	align-items: center;
+	text-align: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	/*background-color: #d0d0d0;*/
+}
+.Header-inner-2 {
+	color: rgba(0,0,0,.8);
+	-webkit-box-flex: 1;
+	flex: 1 1 auto;
+	min-width: 0;
+	max-width: 100%;
+	text-align: left;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	flex-direction: column;
+	-webkit-box-align: start;
+	align-items: flex-start;
+	transition: opacity 200ms 600ms ease-out;
+	display: flex;
+	opacity: 1;
+}
+.Header-inner-3 {
+	text-align: left;
+	box-sizing: border-box;
+	-webkit-box-flex: 1;
+	flex: 0 0 auto;
+	max-width: 40em;
+	font-family: ltc-bodoni-175;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	letter-spacing: 0em;
+	line-height: 1em;
+	text-transform: uppercase;
+	/*color: #2e727f;*/
+	color: #732929;
+	padding: 2.5px 10px;
+}
+.Content-outer {
+	width: 100vw;
+	height: 325vh;
+	/*background-color: #FF5733;*/
+}
+.Index {
+	display: block;
+	height: 100%;
+	/*background-color: #FF5733;*/
+}
+.Collage-container {
+	display: block;
+	overflow: hidden;
+	transition: opacity 300ms ease-out;
+	padding: 25px 0 0 25px;
+	opacity: 1;
+	height: 100%;
+	/*background-color: #d0d0d0;*/
+}
+.Collage-content {
+	position: relative;
+	height: 100%;
+}
+.Collage-wrapper {
+	display: block;
+	position: relative;
+	height: 100%;
+}
+.Collage-wrapper-inner {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.Collage-item {
+	display: block;
+	position: relative;
+	float: left;
+	/*box-sizing: border-box;*/
+	width: 50%;
+	height: 25%;
+}
+.Collage-item-inner {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	bottom: 25px;
+	left: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 0;
+	text-align: center;
+	height: 100%;
+}
+.Collage-button {
+	font-size: 12px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+
+	max-width: 100%;
+	width: 100%;
+	white-space: normal;
+	padding: 25px;
+	background: rgba(255,255,255,0);
+	text-align: center;
+	margin-top: 0%;
+	vertical-align: top;
+	background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 99%);
+
+}
+.Collage-button-heading {
+	text-align: center;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 0;
+	font-family: futura-pt;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: .25em;
+	line-height: 1em;
+	text-transform: uppercase;
+	color: #fdf7f7;
+	margin-top: 0;
+	padding-bottom: .3em;
+}
+.Collage-button-heading-under {
+	white-space: normal;
+	text-align: center;
+	font-family: proxima-nova;
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: .15em;
+	/*line-height: 2em;*/
+	text-transform: uppercase;
+	color: #f2f6f7;
+	padding-top: .3em;
+}
+.Collage-item-image {
+	white-space: nowrap;
+	font-size: 0;
+	text-align: center;
+	color: inherit;
+	text-decoration: none;
+	display: block;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	bottom: -1px;
+	left: -1px;
+	z-index: 0;
+	margin: 0;
+	background-color: #fff;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.body-image {
+	border: 0;
+	opacity: 1;
+	transition: opacity 200ms ease-out;
+	/*left: -68.5px;*/
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	box-sizing: border-box;
+	object-fit: cover;
+	padding-bottom: 25px;
+	/*background-color: #d0d0d0;*/
+
+}
+
+
+
+
+
+
+
+
+
