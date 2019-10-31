@@ -99,7 +99,7 @@ $(document).ready(function(){
   // =================== PARALLAX BANNER ==============
   $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
-    $("#top-banner").css('top', -(scrollTop * .4) + 'px');
+    $("#atlas-vid").css('top', -(scrollTop * .4) + 'px');
   });
   // ======================= AUTO TYPING ================
   $(function(){
