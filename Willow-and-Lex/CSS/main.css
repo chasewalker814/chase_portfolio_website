@@ -16,20 +16,6 @@ body {
 	background-color: #fff !important;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
-.Loader {
-	position: fixed;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 5px;
-	z-index: 9999;
-	background-color: transparent;
-	transition: background-color .3s ease-out,transform 0s .3s linear;
-	display: none;
-}
-.Site-loaded {
-
-}
 p {
 	white-space: normal;
 	text-align: center;
@@ -58,11 +44,51 @@ a {
 	transition: color .15s ease-out;
 }
 /*====================== HEADER ===================*/
-
+.Header1 {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #E89888;
+	z-index: 99;
+}
+.Header-spaced {
+	display: flex;
+	justify-content: space-between;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: white;
+}
+#home-icon {
+	height: 75px;
+  margin: 2px 0 0 2px;
+}
+.brand-logo-name {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 20vw;
+}
+.brand-name {
+	display: flex;
+	/*border: 1px solid red;*/
+}
+.Link-list-container {
+	display: flex;
+	align-items: center;
+	/*border: 2px solid pink;*/
+}
+.Link-list {
+	display: flex;
+	flex-direction: row;
+	width: 35vw;
+	justify-content: space-around;
+}
 /*=================== INTRO ==================*/
 .home-div {
 	background: url('../Images/image2.jpeg') no-repeat fixed center;
-	background-size: 100vh;
+	/*background: url('../Images/WLlogo.png') no-repeat fixed center;*/
+	background-size: 90vh;
+	box-sizing: border-box;
 	width: 100%;
 	height: 100vh;
 	background-color: #E89888;
