@@ -31,6 +31,7 @@ p {
 	background-color: transparent;
 }
 .fly-box {
+	z-index: 1;
   padding: 10px;
 }
 .slide-in {
@@ -294,16 +295,14 @@ video {
 }
 /*================== ABOUT ME SECTION ================*/
 #about-me-div {
-	height: 100%;
-	min-height: 750px;
+	height: 90vh;
 	background-color: #fff;
 	margin-bottom: .8%;
 }
 .about-me-collage {
-	height: 100vh;
+	height: 100%;
 	min-height: 750px;
 	margin-bottom: .8%;
-	overflow: hidden;
 }
 #spin-circle {
 	background: url(../Images/grey-gradient-circle.png) center center no-repeat;
@@ -365,16 +364,17 @@ video {
 	background-position: 10% 25%;
 }
 #about-text-div {
-	/*padding: 8% 4%;*/
+	padding: 8% 4%;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
-	height: 100vh;
-	min-height: 750px;
+	height: 100%;
+	/*min-height: 750px;*/
 	color: #383838;
 	overflow: hidden;
-	background-color: #fff;
+	/*background-color: #fff;*/
+	z-index: 0;
 }
 .about-text, .about-title {
 	margin: 20px 5px;
