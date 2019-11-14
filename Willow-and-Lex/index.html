@@ -7,6 +7,7 @@
   <title>Willow&Lex</title>
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -57,14 +58,14 @@
 											<div class="Collage-button-heading-under">
 												<p>
 													<a href="new-page">
-														<strong>Thanksgiving and Christmas</strong>
+														<strong>Popular Holiday Decor</strong>
 													</a>
 												</p>
 											</div>
 										</div>
 
 										<a href="" class="Collage-item-image">
-											<img src="Images/image1.jpeg" class="body-image">
+											<img src="Images/image13.jpeg" class="body-image">
 										</a>
 
 									</div>
@@ -124,6 +125,46 @@
 										</div>
 
 										<a href="" class="Collage-item-image">
+											<img src="Images/image14.jpeg" class="body-image">
+										</a>
+
+									</div>
+								</article>
+								<article class="Collage-item">
+									<div class="Collage-item-inner">
+
+										<div class="Collage-button">
+											<h2 class="Collage-button-heading">SEASONAL GIFTS</h2>
+											<div class="Collage-button-heading-under">
+												<p>
+													<a href="new-page">
+														<strong>new page</strong>
+													</a>
+												</p>
+											</div>
+										</div>
+
+										<a href="" class="Collage-item-image">
+											<img src="Images/image1.jpeg" class="body-image">
+										</a>
+
+									</div>
+								</article>
+								<article class="Collage-item">
+									<div class="Collage-item-inner">
+
+										<div class="Collage-button">
+											<h2 class="Collage-button-heading">SEASONAL GIFTS</h2>
+											<div class="Collage-button-heading-under">
+												<p>
+													<a href="new-page">
+														<strong>new page</strong>
+													</a>
+												</p>
+											</div>
+										</div>
+
+										<a href="" class="Collage-item-image">
 											<img src="Images/image7.jpeg" class="body-image">
 										</a>
 
@@ -144,7 +185,7 @@
 										</div>
 
 										<a href="" class="Collage-item-image">
-											<img src="Images/image1.jpeg" class="body-image">
+											<img src="Images/image9.jpeg" class="body-image">
 										</a>
 
 									</div>
@@ -164,47 +205,7 @@
 										</div>
 
 										<a href="" class="Collage-item-image">
-											<img src="Images/image1.jpeg" class="body-image">
-										</a>
-
-									</div>
-								</article>
-								<article class="Collage-item">
-									<div class="Collage-item-inner">
-
-										<div class="Collage-button">
-											<h2 class="Collage-button-heading">SEASONAL GIFTS</h2>
-											<div class="Collage-button-heading-under">
-												<p>
-													<a href="new-page">
-														<strong>new page</strong>
-													</a>
-												</p>
-											</div>
-										</div>
-
-										<a href="" class="Collage-item-image">
-											<img src="Images/image1.jpeg" class="body-image">
-										</a>
-
-									</div>
-								</article>
-								<article class="Collage-item">
-									<div class="Collage-item-inner">
-
-										<div class="Collage-button">
-											<h2 class="Collage-button-heading">SEASONAL GIFTS</h2>
-											<div class="Collage-button-heading-under">
-												<p>
-													<a href="new-page">
-														<strong>new page</strong>
-													</a>
-												</p>
-											</div>
-										</div>
-
-										<a href="" class="Collage-item-image">
-											<img src="Images/image1.jpeg" class="body-image">
+											<img src="Images/image10.jpeg" class="body-image">
 										</a>
 
 									</div>
@@ -217,12 +218,43 @@
 		</div>
 	</div>
 <!-- ================== FOOTER ==================== -->
-	<footer>
-		<div>
-			<div></div>
+	<footer class="Footer">
+		<div class="Footer-inner">
+			<div class="Footer-header">
+				<div class="Footer-header-inner">
+					<h2 id="follow-us"><strong>FOLLOW US</strong></h2>
+				</div>
+			</div>
+			<div class="Footer-middle">
+				<div class="Footer-middle-header">
+					<div class="Footer-middle-header-icons">
+						<img src="Images/facebook-icon.png" class="footer-icon">
+						<img src="Images/instagram-icon.png" class="footer-icon">
+					</div>
+				</div>
+				<div class="instafeed-container">
+					<div id="instafeed"></div>
+				</div>	
+			</div>
+			<div class="Footer-bottom">
+				
+			</div>
 		</div>
 	</footer>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="JS/style.js"></script>
+  <script type="text/javascript" src="JS/instafeed.min.js"></script>
+  <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '3055736556',
+        template: '<a href="{{link}}" id="instafeed-link"><img class="insta-image" cover src="{{image}}" /></a> ',
+        limit: '8',
+        resolution: 'standard_resolution',
+        accessToken: '3055736556.1677ed0.a2c77f64fd764a7084a331440e3cf4fb'
+    });
+    userFeed.run();
+</script>
 </body>
 
 </html>
